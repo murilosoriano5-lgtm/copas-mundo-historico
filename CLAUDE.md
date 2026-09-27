@@ -40,8 +40,10 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
 
 ## Status conhecido / pendências
 
-- `edicoes.csv` tem as 37 linhas (1990–2026) com o ano preenchido; todo o resto (sede, campeão, vice, artilheiro...) está em branco aguardando os dados fictícios do usuário.
-- `jogos.csv`, `potes.csv`, `grupos.csv` e `ranking_historico.csv` estão vazios (só cabeçalho). Os dados serão enviados pelo usuário aos poucos, por edição.
+- `edicoes.csv` tem as 37 linhas (1990–2026) com o ano preenchido; 1990 já tem sede (França) e número de seleções/jogos. Resto (campeão, vice, artilheiro...) em branco até os jogos serem disputados.
+- `jogos.csv` e `ranking_historico.csv` estão vazios (só cabeçalho) — aguardando os jogos de 1990 serem enviados/registrados.
+- `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
+- `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
 - Regulamento completo (potes, sorteio, chaveamento, desempate, ranking) já fechado e documentado em `docs/REGRAS_DO_TORNEIO.md`.
 
