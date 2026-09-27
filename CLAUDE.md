@@ -4,7 +4,11 @@ Este arquivo existe para que qualquer sessão do Claude (ou qualquer pessoa) ent
 
 ## Objetivo do projeto
 
-Consolidar o histórico de jogos das Copas do Mundo FIFA masculinas de **1990 a 2026** em arquivos de dados estruturados (CSV), documentados e versionados no git.
+Consolidar o histórico de jogos de uma **Copa do Mundo FICTÍCIA** (universo próprio do usuário, não é o histórico real da FIFA) em arquivos de dados estruturados (CSV), documentados e versionados no git.
+
+**Regra importante para qualquer sessão do Claude:** NUNCA preencher `edicoes.csv` ou `jogos.csv` com resultados reais da Copa do Mundo de verdade (ex: Brasil campeão em 1994, França em 2018 etc.). Todo campeão, resultado e artilheiro aqui é inventado pelo usuário ou combinado com ele. Em caso de dúvida sobre um dado, perguntar antes de preencher.
+
+**Diferença chave para o mundo real:** aqui a Copa é **anual** (1990 a 2026 = 37 edições, uma por ano), não a cada 4 anos.
 
 ## Por que CSV e não banco de dados
 
@@ -14,9 +18,9 @@ Simplicidade: fácil de editar, revisar em diff no git, importar em Excel/Python
 
 | Arquivo | Conteúdo | Status |
 |---|---|---|
-| `edicoes.csv` | 1 linha por edição da Copa (ano, sede, campeão, vice, artilheiro...) | Preenchido 1990–2022, 2026 pendente |
-| `selecoes.csv` | Seleções nacionais e confederação | Template, pendente |
-| `jogos.csv` | Todos os jogos de todas as edições | Template, pendente |
+| `edicoes.csv` | 1 linha por edição da Copa (37 linhas: 1990–2026, uma por ano) | Template com anos preenchidos, resto em branco |
+| `selecoes.csv` | Seleções nacionais e confederação | Template com exemplos, pendente |
+| `jogos.csv` | Todos os jogos de todas as edições | Template vazio, pendente |
 
 Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
 
@@ -30,8 +34,9 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
 
 ## Status conhecido / pendências
 
-- 2026: sede é Estados Unidos, Canadá e México. Resultado (campeão etc.) **não preenchido** — não deve ser inventado; só adicionar quando o usuário confirmar os dados oficiais.
-- `jogos.csv` está vazio (só cabeçalho + 1 linha de exemplo). Os dados serão enviados pelo usuário aos poucos, por edição.
+- `edicoes.csv` tem as 37 linhas (1990–2026) com o ano preenchido; todo o resto (sede, campeão, vice, artilheiro...) está em branco aguardando os dados fictícios do usuário.
+- `jogos.csv` está vazio (só cabeçalho). Os dados serão enviados pelo usuário aos poucos, por edição.
+- Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
 
 ## Como adicionar dados
 

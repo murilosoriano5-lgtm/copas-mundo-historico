@@ -2,6 +2,8 @@
 
 Dicionário de dados dos arquivos em `data/`. Sempre consulte antes de adicionar ou editar linhas.
 
+> **Universo fictício:** esta Copa acontece todo ano (1990–2026, 37 edições), não a cada 4 anos como a Copa real. Todos os resultados (campeões, artilheiros etc.) são inventados — nunca usar dados reais da FIFA.
+
 ## `edicoes.csv`
 
 Uma linha por edição da Copa do Mundo.

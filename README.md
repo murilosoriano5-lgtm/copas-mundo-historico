@@ -1,6 +1,8 @@
-# Copas do Mundo — Histórico (1990–2026)
+# Copas do Mundo — Histórico Fictício (1990–2026)
 
-Base de dados histórica das Copas do Mundo FIFA masculinas, cobrindo todas as edições de **1990 até 2026**: seleções, edições e jogos (fase de grupos, mata-mata, resultados, artilheiros).
+Base de dados de uma **Copa do Mundo fictícia** — universo próprio, não é o histórico real da FIFA. Aqui a Copa acontece **todo ano**, de **1990 a 2026** (37 edições), em vez de a cada 4 anos como no mundo real.
+
+Cobre seleções, edições e jogos (fase de grupos, mata-mata, resultados, artilheiros) desse universo.
 
 ## Estrutura do projeto
 
@@ -18,9 +20,9 @@ copas-mundo-historico/
 
 ## Status atual
 
-- `edicoes.csv`: preenchido de 1990 a 2022 (dados históricos consolidados). 2026 aguardando confirmação.
-- `jogos.csv`: template criado, aguardando os dados dos jogos.
-- `selecoes.csv`: template criado, aguardando lista de seleções.
+- `edicoes.csv`: template com as 37 linhas (1990 a 2026), todas em branco aguardando os dados fictícios (sede, campeão, artilheiro...).
+- `jogos.csv`: template vazio, aguardando os jogos.
+- `selecoes.csv`: template com seleções de exemplo (nações reais podem participar deste universo fictício, mas os resultados/campeões são inventados).
 
 ## Como contribuir com dados
 
@@ -28,4 +30,4 @@ Veja `docs/ESTRUTURA_DE_DADOS.md` para o formato exato de cada arquivo antes de 
 
 ## Edições cobertas
 
-1990 · 1994 · 1998 · 2002 · 2006 · 2010 · 2014 · 2018 · 2022 · 2026
+37 edições, uma por ano: 1990, 1991, 1992 ... 2025, 2026 (Copa anual, não a cada 4 anos).
