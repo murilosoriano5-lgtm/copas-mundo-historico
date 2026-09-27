@@ -60,3 +60,37 @@ Uma linha por jogo, de todas as edições.
 - Se foi decidido na prorrogação sem pênaltis, preencher `gols_prorrogacao_*` e deixar `penaltis_*` vazio.
 - Se foi para pênaltis, preencher `penaltis_casa` e `penaltis_visitante` com o placar da disputa.
 - O resultado final do jogo é sempre `gols_casa + gols_prorrogacao_casa` (idem visitante) somado a quem venceu nos pênaltis, se houver.
+
+## `potes.csv`
+
+Composição dos 4 potes de cada edição (regras completas em `docs/REGRAS_DO_TORNEIO.md`).
+
+| Coluna | Tipo | Descrição |
+|---|---|---|
+| `ano_edicao` | inteiro | Ano da edição |
+| `pote` | inteiro | 1, 2, 3 ou 4 |
+| `selecao` | texto | Nome padronizado da seleção (8 seleções por pote) |
+
+## `grupos.csv`
+
+Resultado do sorteio: qual grupo cada seleção caiu em cada edição.
+
+| Coluna | Tipo | Descrição |
+|---|---|---|
+| `ano_edicao` | inteiro | Ano da edição |
+| `grupo` | texto | Letra do grupo, `A` a `H` |
+| `selecao` | texto | Nome padronizado da seleção (4 seleções por grupo) |
+
+## `ranking_historico.csv`
+
+Snapshot do ranking histórico calculado a partir de `jogos.csv`, usado para montar os potes da próxima edição. Ver fórmula de pontuação em `docs/REGRAS_DO_TORNEIO.md`.
+
+| Coluna | Tipo | Descrição |
+|---|---|---|
+| `ano_referencia` | inteiro | Edição para a qual este snapshot foi calculado (ex: `1994` = ranking acumulado até antes da Copa de 1994) |
+| `selecao` | texto | Nome padronizado da seleção |
+| `pontos` | inteiro | Pontos acumulados (vitória=3, empate=1, derrota=0; pênaltis contam como empate) |
+| `jogos` | inteiro | Total de jogos disputados até então |
+| `vitorias` | inteiro | Total de vitórias |
+| `empates` | inteiro | Total de empates (inclui decisões por pênaltis) |
+| `derrotas` | inteiro | Total de derrotas |
