@@ -41,7 +41,11 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
 ## Status conhecido / pendências
 
 - `edicoes.csv` tem as 37 linhas (1990–2026) com o ano preenchido; 1990 já tem sede (França) e número de seleções/jogos. Resto (campeão, vice, artilheiro...) em branco até os jogos serem disputados.
-- `jogos.csv` e `ranking_historico.csv` estão vazios (só cabeçalho) — aguardando os jogos de 1990 serem enviados/registrados.
+- `jogos.csv`: fase de grupos de 1990 completa (48 jogos). Datas e nomes de estádio não foram informados pelo usuário — ficaram em branco de propósito (não inventar). Cidades preenchidas quando informadas.
+- Classificação final dos grupos de 1990 (nenhum empate precisou de critério de desempate — pontos já definiram 1º/2º em todos os grupos):
+  A: 1º França, 2º URSS · B: 1º Brasil, 2º Polônia · C: 1º Alemanha, 2º Chile · D: 1º Holanda, 2º México · E: 1º Espanha, 2º Tchecoslováquia · F: 1º Uruguai, 2º Argentina · G: 1º Inglaterra, 2º Iugoslávia · H: 1º Itália, 2º Colômbia.
+- Oitavas de final de 1990 ainda não registradas em `jogos.csv` (jogos não disputados); confrontos definidos em `docs/REGRAS_DO_TORNEIO.md`: França x Polônia, Alemanha x México, Espanha x Argentina, Inglaterra x Colômbia (Lado A) / Brasil x URSS, Holanda x Chile, Uruguai x Tchecoslováquia, Itália x Iugoslávia (Lado B).
+- `ranking_historico.csv` continua vazio — só passa a ser usado a partir da Copa de 1991 (1990 teve potes definidos manualmente pelo usuário).
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.

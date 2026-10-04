@@ -41,6 +41,15 @@ Os 2 primeiros colocados de cada grupo avançam.
 
 Ou seja: o 1º colocado de um grupo nunca cai no mesmo lado do chaveamento que o 2º colocado do mesmo grupo — evita reencontro precoce e mantém a lógica de cruzamento como na Copa real.
 
+### Confrontos das oitavas de final
+
+Dentro de cada lado, os confrontos seguem o padrão clássico da Copa real (1º de um grupo contra 2º de outro grupo do mesmo lado):
+
+**Lado A:** 1A x 2B · 1C x 2D · 1E x 2F · 1G x 2H
+**Lado B:** 1B x 2A · 1D x 2C · 1F x 2E · 1H x 2G
+
+Vencedores desses confrontos avançam para as quartas dentro do mesmo lado (1A/2B vs 1C/2D, 1E/2F vs 1G/2H — e o espelho no lado B), depois semifinal por lado, e os dois finalistas (um de cada lado) se enfrentam na final.
+
 ## Critérios de desempate (fase de grupos)
 
 Aplicados nesta ordem até resolver o empate:
