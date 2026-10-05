@@ -50,12 +50,13 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
 - **Copa de 1990 completa (64/64 jogos).** Semifinal: França 1x0 Inglaterra · Brasil 0x0 Itália (pên. 9x8). Terceiro lugar: Inglaterra 1x3 Itália. **Final: França 1x2 Brasil (prorrogação) — Brasil é o 1º campeão da Copa fictícia.** `edicoes.csv` atualizado: campeão Brasil, vice França, 3º Itália, 4º Inglaterra. Artilheiro/melhor jogador de 1990 ainda não informados (em branco).
   - Mesma pendência de precisão da final: placar final 1x2 informado, split normal/prorrogação não.
 - `ranking_historico.csv` calculado para `ano_referencia=1991` a partir dos 64 jogos de 1990 (vitória=3, empate=1, derrota=0). Topo do ranking: Brasil e Itália (17 pts), França (16 pts), Alemanha e Inglaterra (13 pts).
-- **Copa de 1991: potes e grupos já definidos.** Sede Itália, campeão anterior Brasil. Usuário travou manualmente Alemanha/França/Inglaterra/Holanda no pote 1 (além de sede+campeão); as 2 vagas restantes do pote 1 vieram do ranking (Espanha 12 pts, Uruguai 8 pts). Potes 2–4 calculados por ranking entre as 24 seleções restantes (ordem alfabética em caso de empate — primeira vez que a regra foi usada, ver `docs/REGRAS_DO_TORNEIO.md`).
-  - Pote 1: Itália, Brasil, Alemanha, França, Inglaterra, Holanda, Espanha, Uruguai.
-  - Pote 2: Tchecoslováquia, Chile, México, Argentina, Polônia, Egito, Bélgica, Camarões.
-  - Pote 3: Austrália, Argélia, Canadá, Coreia do Sul, Dinamarca, El Salvador, Etiópia, Irã.
-  - Pote 4: Japão, Kuwait, Nova Zelândia, Paraguai, Peru, Suécia, Túnisia, Zimbábue.
-  - Grupos sorteados com `random.seed(1991)`, sem restrição especial pedida pelo usuário desta vez. Resultado em `data/grupos.csv`.
+- **Copa de 1991: potes e grupos já definidos — 100% por pontuação do ranking histórico, sem travas manuais.** Sede Itália, campeão anterior Brasil, pote 1 completado pelas 6 maiores pontuações entre as 30 seleções da lista do usuário. Potes 2–4 pela mesma lógica, ordem alfabética em caso de empate (ver `docs/REGRAS_DO_TORNEIO.md`).
+  - Pote 1: Itália, Brasil, França (16 pts), Alemanha (13), Inglaterra (13), Espanha (12), Holanda (12), Uruguai (8).
+  - Pote 2: Tchecoslováquia (7), Chile (6), México (6), Argentina (5), Polônia (5), Egito (4), Bélgica (3), Camarões (3).
+  - Pote 3: Tunísia (3), Austrália (1), Argélia (0), Canadá (0), Coreia do Sul (0), Dinamarca (0), El Salvador (0), Etiópia (0).
+  - Pote 4: Irã (0), Japão (0), Kuwait (0), Nova Zelândia (0), Paraguai (0), Peru (0), Suécia (0), Zimbábue (0).
+  - **Correção aplicada:** a Tunísia estava grafada "Túnisia" em `selecoes.csv`/`potes.csv`/`grupos.csv` mas "Tunísia" em `jogos.csv`/`ranking_historico.csv` — isso fez o cálculo do pote ignorar os 3 pontos da Tunísia em 1990 e colocá-la no pote 4 por engano. Padronizado para "Tunísia" em todos os arquivos; pote 3/4 e sorteio de grupos refeitos.
+  - Grupos sorteados com `random.seed(1991)` (sem restrição especial pedida pelo usuário). Resultado em `data/grupos.csv`.
   - 11 seleções novas (nunca jogaram em 1990) adicionadas a `selecoes.csv`: Suécia, Dinamarca, Canadá, Paraguai, El Salvador, Peru, Zimbábue, Argélia, Etiópia, Kuwait, Irã.
   - Jogos de 1991 ainda não disputados/registrados em `jogos.csv`.
 - `ranking_historico.csv` continua vazio — só passa a ser usado a partir da Copa de 1991 (1990 teve potes definidos manualmente pelo usuário).
