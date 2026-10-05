@@ -49,7 +49,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
 - Quartas de final de 1990 registradas em `jogos.csv` (4 jogos): França 1(4)x1(2) Alemanha (pênaltis), Espanha 0x3 Inglaterra (Lado A) · Brasil 2x1 Holanda, Uruguai 0x2 Itália (Lado B).
 - **Copa de 1990 completa (64/64 jogos).** Semifinal: França 1x0 Inglaterra · Brasil 0x0 Itália (pên. 9x8). Terceiro lugar: Inglaterra 1x3 Itália. **Final: França 1x2 Brasil (prorrogação) — Brasil é o 1º campeão da Copa fictícia.** `edicoes.csv` atualizado: campeão Brasil, vice França, 3º Itália, 4º Inglaterra. Artilheiro/melhor jogador de 1990 ainda não informados (em branco).
   - Mesma pendência de precisão da final: placar final 1x2 informado, split normal/prorrogação não.
-- `ranking_historico.csv` calculado para `ano_referencia=1991` a partir dos 64 jogos de 1990 (vitória=3, empate=1, derrota=0). Topo do ranking: Brasil e Itália (17 pts), França (16 pts), Alemanha e Inglaterra (13 pts). Pronto para montar os potes de 1991: pote 1 = sede de 1991 + Brasil (campeão) + maiores pontuações até completar 8.
+- `ranking_historico.csv` calculado para `ano_referencia=1991` a partir dos 64 jogos de 1990 (vitória=3, empate=1, derrota=0). Topo do ranking: Brasil e Itália (17 pts), França (16 pts), Alemanha e Inglaterra (13 pts).
+- **Copa de 1991: potes e grupos já definidos.** Sede Itália, campeão anterior Brasil. Usuário travou manualmente Alemanha/França/Inglaterra/Holanda no pote 1 (além de sede+campeão); as 2 vagas restantes do pote 1 vieram do ranking (Espanha 12 pts, Uruguai 8 pts). Potes 2–4 calculados por ranking entre as 24 seleções restantes (ordem alfabética em caso de empate — primeira vez que a regra foi usada, ver `docs/REGRAS_DO_TORNEIO.md`).
+  - Pote 1: Itália, Brasil, Alemanha, França, Inglaterra, Holanda, Espanha, Uruguai.
+  - Pote 2: Tchecoslováquia, Chile, México, Argentina, Polônia, Egito, Bélgica, Camarões.
+  - Pote 3: Austrália, Argélia, Canadá, Coreia do Sul, Dinamarca, El Salvador, Etiópia, Irã.
+  - Pote 4: Japão, Kuwait, Nova Zelândia, Paraguai, Peru, Suécia, Túnisia, Zimbábue.
+  - Grupos sorteados com `random.seed(1991)`, sem restrição especial pedida pelo usuário desta vez. Resultado em `data/grupos.csv`.
+  - 11 seleções novas (nunca jogaram em 1990) adicionadas a `selecoes.csv`: Suécia, Dinamarca, Canadá, Paraguai, El Salvador, Peru, Zimbábue, Argélia, Etiópia, Kuwait, Irã.
+  - Jogos de 1991 ainda não disputados/registrados em `jogos.csv`.
 - `ranking_historico.csv` continua vazio — só passa a ser usado a partir da Copa de 1991 (1990 teve potes definidos manualmente pelo usuário).
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.

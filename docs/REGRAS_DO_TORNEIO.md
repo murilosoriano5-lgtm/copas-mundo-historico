@@ -72,3 +72,7 @@ Pontuação por resultado, acumulada em todas as edições anteriores de uma sel
 **Regra especial — pênaltis:** se a partida termina empatada (tempo normal/prorrogação) e é decidida nos pênaltis (típico do mata-mata), **conta como empate (1 ponto) para as duas seleções** no ranking histórico — o resultado dos pênaltis define quem avança no torneio, mas não altera a pontuação no ranking. Isto é: quem "perde" nos pênaltis também ganha 1 ponto de ranking, não 0.
 
 O ranking é recalculado a partir de `data/jogos.csv` sempre que uma nova edição for montada (ver `data/ranking_historico.csv` para os snapshots já calculados).
+
+**Critério de desempate no ranking (para formar potes):** quando duas ou mais seleções têm a mesma pontuação, usar **ordem alfabética** até o usuário definir outro critério. Primeira vez que isso foi necessário: potes de 1991 (ex: Chile e México empatados em 6 pontos).
+
+**Seleções sem histórico (nunca disputaram a Copa fictícia):** entram no ranking com 0 pontos, concorrendo normalmente pelos potes 3/4.
