@@ -56,7 +56,7 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Pote 3: Tunísia (3), Austrália (1), Argélia (0), Canadá (0), Coreia do Sul (0), Dinamarca (0), El Salvador (0), Etiópia (0).
   - Pote 4: Irã (0), Japão (0), Kuwait (0), Nova Zelândia (0), Paraguai (0), Peru (0), Suécia (0), Zimbábue (0).
   - **Correção aplicada:** a Tunísia estava grafada "Túnisia" em `selecoes.csv`/`potes.csv`/`grupos.csv` mas "Tunísia" em `jogos.csv`/`ranking_historico.csv` — isso fez o cálculo do pote ignorar os 3 pontos da Tunísia em 1990 e colocá-la no pote 4 por engano. Padronizado para "Tunísia" em todos os arquivos; pote 3/4 e sorteio de grupos refeitos.
-  - Grupos sorteados com `random.seed(1991)` (sem restrição especial pedida pelo usuário). Resultado em `data/grupos.csv`.
+  - **Regra permanente nova:** a sede cai sempre no Grupo A (adicionada em `docs/REGRAS_DO_TORNEIO.md`). Itália travada no Grupo A; demais posições sorteadas com `random.seed(1991)`. Resultado em `data/grupos.csv`.
   - 11 seleções novas (nunca jogaram em 1990) adicionadas a `selecoes.csv`: Suécia, Dinamarca, Canadá, Paraguai, El Salvador, Peru, Zimbábue, Argélia, Etiópia, Kuwait, Irã.
   - Jogos de 1991 ainda não disputados/registrados em `jogos.csv`.
 - `ranking_historico.csv` continua vazio — só passa a ser usado a partir da Copa de 1991 (1990 teve potes definidos manualmente pelo usuário).

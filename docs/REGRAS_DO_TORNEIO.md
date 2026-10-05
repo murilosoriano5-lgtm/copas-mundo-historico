@@ -12,7 +12,7 @@
 
 4 potes de 8 seleções cada, definidos pela **pontuação no ranking histórico** (ver seção abaixo).
 
-- **Pote 1**: sede da edição + campeão da edição anterior + seleções de maior pontuação histórica até completar 8.
+- **Pote 1**: sede da edição + campeão da edição anterior (únicos 2 "travados" — todo o resto é por pontuação, sem outras travas manuais) + seleções de maior pontuação no ranking histórico acumulado até completar 8.
   - **Exceção — Copa de 1990**: é a primeira edição, não há "campeão anterior" nem histórico acumulado. Os potes dessa edição são definidos externamente (fornecidos pelo usuário), não calculados.
 - **Potes 2, 3 e 4**: demais seleções, em ordem decrescente de pontuação histórica, 8 por pote.
 
@@ -22,7 +22,7 @@
 2. Sistema identifica o campeão da edição anterior (de `data/edicoes.csv`).
 3. Sistema calcula o ranking histórico acumulado até aquele momento (ver fórmula abaixo, baseado em `data/jogos.csv`).
 4. Pote 1 é montado (sede + campeão anterior + maiores pontuações). Potes 2–4 completam por pontuação.
-5. Sorteio dos grupos: 1 seleção de cada pote por grupo, sem restrição continental.
+5. Sorteio dos grupos: 1 seleção de cada pote por grupo, sem restrição continental. **A sede cai sempre no Grupo A** (regra fixa); os demais, aleatório.
 6. Jogos da fase de grupos são disputados e registrados.
 7. Mata-mata segue o chaveamento cruzado (ver abaixo).
 
