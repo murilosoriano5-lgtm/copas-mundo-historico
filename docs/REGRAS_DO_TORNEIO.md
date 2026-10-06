@@ -75,4 +75,6 @@ O ranking é recalculado a partir de `data/jogos.csv` sempre que uma nova ediç�
 
 **Critério de desempate no ranking (para formar potes):** quando duas ou mais seleções têm a mesma pontuação, usar **ordem alfabética** até o usuário definir outro critério. Primeira vez que isso foi necessário: potes de 1991 (ex: Chile e México empatados em 6 pontos).
 
+**Cuidado técnico — acentos na ordenação alfabética:** comparação padrão de strings em Python ordena letras acentuadas maiúsculas (Á, É, Í, Ó, Ú, Ã, Õ, Ç...) DEPOIS de Z, não junto com a letra sem acento. Isso fez "África do Sul" e "Áustria" caírem no fim da lista por engano no cálculo dos potes de 1992. Sempre normalizar acentos antes de ordenar (ex: `unicodedata.normalize('NFKD', s).encode('ascii','ignore')`) para obter ordem alfabética real.
+
 **Seleções sem histórico (nunca disputaram a Copa fictícia):** entram no ranking com 0 pontos, concorrendo normalmente pelos potes 3/4.
