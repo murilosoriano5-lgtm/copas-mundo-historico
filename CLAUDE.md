@@ -70,7 +70,9 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - **Bug corrigido:** a ordenação alfabética (desempate de pontuação igual) estava usando comparação padrão de string, que põe "África do Sul" e "Áustria" depois de Z por causa do acento. Corrigido com normalização de acentos antes de ordenar; documentado em `docs/REGRAS_DO_TORNEIO.md` para não repetir em edições futuras.
   - Grupos sorteados com `random.seed(1992)`, Suíça travada no Grupo A (regra fixa). Resultado em `data/grupos.csv`.
   - 10 seleções novas adicionadas a `selecoes.csv`: Suíça, Irlanda, Áustria, Hungria, Bolívia, Guatemala, Líbia, Quênia, Omã, Emirados Árabes.
-  - Jogos de 1992 ainda não disputados/registrados em `jogos.csv`.
+  - **Fase de grupos de 1992 completa** (48 jogos em `jogos.csv`). Todos os grupos resolvidos por pontos + saldo de gols, sem necessidade de confronto direto.
+    Classificação: A: Suíça/Polônia · B: Itália/Áustria · C: França/Suécia · D: Brasil/Hungria · E: Uruguai/Camarões · F: Inglaterra/Nigéria · G: Alemanha/Dinamarca · H: Espanha/Argentina.
+  - **Oitavas de 1992 (ainda não disputadas):** Lado A: Suíça x Áustria, França x Hungria, Uruguai x Nigéria, Alemanha x Argentina · Lado B: Itália x Polônia, Brasil x Suécia, Inglaterra x Camarões, Espanha x Dinamarca.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
