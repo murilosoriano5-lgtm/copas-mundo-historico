@@ -82,7 +82,10 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Pote 4: Cuba (0), Escócia (0), Jamaica (0), Líbano (0), Síria (0), Sudão (0), Uganda (0), Vietnã (0) — todas sem histórico na Copa fictícia.
   - Grupos sorteados com `random.seed(1993)`, México travado no Grupo A (regra fixa). Resultado em `data/grupos.csv`.
   - 8 seleções novas adicionadas a `selecoes.csv`: Escócia, Cuba, Jamaica, Sudão, Uganda, Líbano, Síria, Vietnã.
-  - Jogos de 1993 ainda não disputados/registrados em `jogos.csv`.
+  - **Fase de grupos de 1993 completa** (48 jogos em `jogos.csv`).
+    Classificação: A: México/Holanda · B: Suíça/Itália · C: Espanha/Austrália · D: Alemanha/Escócia · E: Uruguai/Argentina · F: França/Colômbia · G: Brasil/Paraguai · H: Inglaterra/Líbano.
+  - **Novo critério de desempate usado pela 1ª vez (Grupo E):** Uruguai e Argentina empataram em pontos (7), saldo de gols (+2), gols marcados (6) e até no confronto direto (2x2) — usuário definiu critério novo: maior pontuação no ranking histórico acumulado decide. Uruguai (28 pts) ficou em 1º, Argentina (18 pts) em 2º. Regra adicionada permanentemente em `docs/REGRAS_DO_TORNEIO.md` como critério 4 (antes do sorteio, que agora é só o último recurso).
+  - **Oitavas de 1993 (ainda não disputadas):** Lado A: México x Itália, Espanha x Escócia, Uruguai x Colômbia, Brasil x Líbano · Lado B: Suíça x Holanda, Alemanha x Austrália, França x Argentina, Inglaterra x Paraguai.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.

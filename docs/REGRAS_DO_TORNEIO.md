@@ -57,7 +57,8 @@ Aplicados nesta ordem até resolver o empate:
 1. Saldo de gols
 2. Mais gols marcados
 3. Confronto direto
-4. Sorteio (último critério, se tudo empatar)
+4. **Maior pontuação no ranking histórico acumulado** (regra adicionada após a Copa de 1993 — primeiro caso: Uruguai 28 x Argentina 18, empatados em pontos/saldo/gols/confronto direto no Grupo E)
+5. Sorteio (último critério, se tudo empatar mesmo pelo ranking histórico)
 
 ## Ranking histórico (usado para formar os potes)
 
