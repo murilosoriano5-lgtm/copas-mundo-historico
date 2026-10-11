@@ -75,6 +75,14 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - **Copa de 1992 completa (64/64 jogos).** Oitavas: Suíça 4(3)x4(2) Áustria (pênaltis), França 3x0 Hungria, Uruguai 2x1 Nigéria (prorrogação), Alemanha 3x1 Argentina (Lado A) · Itália 2x0 Polônia, Brasil 1(4)x1(3) Suécia (pênaltis), Inglaterra 1x0 Camarões, Espanha 2x1 Dinamarca (Lado B). Quartas: Suíça 1(3)x1(5) França (pênaltis), Uruguai 0x1 Alemanha (Lado A) · Itália 2x0 Brasil, Inglaterra 2x3 Espanha (Lado B). Semifinal: França 2(12)x2(11) Alemanha (pênaltis — disputa longa), Itália 1x0 Espanha (prorrogação). Terceiro lugar: Alemanha 2x1 Espanha (prorrogação). **Final: França 2x0 Itália — França é campeã.** `edicoes.csv` atualizado: campeão França, vice Itália, 3º Alemanha, 4º Espanha.
   - Pendência de precisão (mesmo padrão já registrado): Uruguai x Nigéria, Itália x Espanha e Alemanha x Espanha (3º lugar) foram decididos na prorrogação, mas só o placar final foi informado — split normal/prorrogação não registrado.
 - `ranking_historico.csv` recalculado para `ano_referencia=1993`, acumulando 1990+1991+1992 (192 jogos). Topo: Itália (54 pts), França (45), Alemanha/Inglaterra (42), Brasil (40), Espanha (35), Uruguai (28), Holanda (22).
+- **Copa de 1993: potes e grupos definidos.** Sede México, campeão anterior Alemanha. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-1992) entre as 30 seleções da lista.
+  - Pote 1: México, Alemanha, Itália (54), França (45), Inglaterra (42), Brasil (40), Espanha (35), Uruguai (28).
+  - Pote 2: Holanda (22), Argentina (18), Egito (9), Nigéria (9), Suíça (9), Austrália (8), Colômbia (5), Paraguai (5).
+  - Pote 3: Japão (4), Portugal (4), Argélia (3), Hungria (3), Marrocos (3), Nova Zelândia (3), Estados Unidos (1), Irlanda (1).
+  - Pote 4: Cuba (0), Escócia (0), Jamaica (0), Líbano (0), Síria (0), Sudão (0), Uganda (0), Vietnã (0) — todas sem histórico na Copa fictícia.
+  - Grupos sorteados com `random.seed(1993)`, México travado no Grupo A (regra fixa). Resultado em `data/grupos.csv`.
+  - 8 seleções novas adicionadas a `selecoes.csv`: Escócia, Cuba, Jamaica, Sudão, Uganda, Líbano, Síria, Vietnã.
+  - Jogos de 1993 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
