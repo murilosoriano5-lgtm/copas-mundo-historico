@@ -88,6 +88,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - **Copa de 1993 completa (64/64 jogos).** Oitavas: México 1(14)x1(15) Itália (pênaltis), Espanha 1x0 Escócia, Uruguai 2x0 Colômbia, Brasil 3x1 Líbano (Lado A) · Suíça 1x2 Holanda (prorrogação), Alemanha 2x0 Austrália, França 4x2 Argentina (prorrogação), Inglaterra 1(5)x1(3) Paraguai (pênaltis) (Lado B). Quartas: Itália 2x0 Espanha, Uruguai 3x1 Brasil (Lado A) · Holanda 2x3 Alemanha, França 2x1 Inglaterra (Lado B). Semifinal: Itália 1x0 Uruguai (prorrogação), Alemanha 3x0 França. Terceiro lugar: Uruguai 2x1 França. **Final: Itália 0x2 Alemanha — Alemanha é bicampeã.** `edicoes.csv` atualizado: campeão Alemanha, vice Itália, 3º Uruguai, 4º França.
   - Pendência de precisão (mesmo padrão): Suíça x Holanda e Itália x Uruguai (semifinal) foram na prorrogação, só placar final informado.
 - `ranking_historico.csv` recalculado para `ano_referencia=1994`, acumulando 1990-1993 (256 jogos). Topo: Itália (66 pts), Alemanha (63), França (58), Brasil (52), Inglaterra (50), Espanha (45), Uruguai (44), Holanda (31).
+- **Copa de 1994: potes e grupos definidos.** Sede Suécia (sem histórico), campeão anterior França. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-1993) entre as 30 seleções da lista.
+  - Pote 1: Suécia, França, Itália (66), Alemanha (63), Brasil (52), Inglaterra (50), Espanha (45), Uruguai (44).
+  - Pote 2: Holanda (31), México (27), Argentina (25), Suíça (15), Austrália (14), Paraguai (12), Egito (11), Dinamarca (9).
+  - Pote 3: Irã (7), Japão (7), Marrocos (7), Portugal (7), Chile (6), Nova Zelândia (6), Líbano (4), África do Sul (3).
+  - Pote 4: Coreia do Sul (3), Peru (1), Angola (0), Bolívia (0), Bulgária (0), Líbia (0), Noruega (0), Sudão (0).
+  - Grupos sorteados com `random.seed(1994)`, Suécia travada no Grupo A. Resultado em `data/grupos.csv`.
+  - 3 seleções novas adicionadas a `selecoes.csv`: Bulgária, Noruega, Angola.
+  - **Sedes/cidades desta edição informadas pelo usuário (8):** Estocolmo I, Estocolmo II, Uppsala, Örebro, Malmö, Helsingborg, Gotemburgo I, Gotemburgo II. Ainda não associadas a jogos específicos — usar quando o usuário mandar os resultados informando a cidade de cada partida.
+  - Jogos de 1994 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
