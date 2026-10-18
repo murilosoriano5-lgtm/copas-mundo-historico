@@ -109,6 +109,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - **Copa de 1995 completa (64/64 jogos).** Grupos: A: Uruguai/Dinamarca · B: Holanda/México · C: Argentina/Inglaterra · D: Alemanha/Colômbia · E: Brasil/Austrália · F: Itália/Paraguai · G: França/Tunísia · H: Espanha/Nigéria. Oitavas com destaque para Espanha 1(4)x1(5) Tunísia nos pênaltis (Tunísia elimina a Espanha). Quartas, semifinal (Alemanha 4x3 Itália nos pênaltis) e final: **Uruguai 0x1 Alemanha (prorrogação) — Alemanha conquista o 2º título** (após 1993; em 1992 o campeão foi a França, não a Alemanha — correção de um erro anterior). `edicoes.csv`: campeão Alemanha, vice Uruguai, 3º França, 4º Itália.
   - Pendência de precisão (mesmo padrão): Uruguai x México, Brasil x Paraguai (oitavas), Brasil x França (quartas) e Uruguai x Alemanha (final) foram na prorrogação, só placar final informado.
 - `ranking_historico.csv` recalculado para `ano_referencia=1996`, acumulando 1990-1995 (384 jogos). Topo: Itália (94 pts), Alemanha (92), França (87), Brasil (79), Espanha/Uruguai (69), Inglaterra (67), Holanda (50).
+- **Copa de 1996: potes e grupos definidos.** Sede Estados Unidos (3 pts de histórico, mas sede/campeão sempre travados independente de pontuação), campeão anterior Alemanha. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-1995) entre as 30 seleções da lista.
+  - Pote 1: Estados Unidos, Alemanha, Itália (94), França (87), Brasil (79), Espanha (69), Uruguai (69), Inglaterra (67).
+  - Pote 2: Holanda (50), México (38), Suécia (29), Austrália (23), Dinamarca (22), Camarões (18), Egito (18), Paraguai (18).
+  - Pote 3: Colômbia (16), Nigéria (15), Tunísia (14), Nova Zelândia (13), Portugal (13), Japão (11), Chile (7), Marrocos (7).
+  - Pote 4: Coreia do Sul (6), Áustria (5), Líbano (4), Bolívia (3), Arábia Saudita (1), Equador (0), Gana (0), Rússia (0).
+  - Grupos sorteados com `random.seed(1996)`, Estados Unidos travados no Grupo A. Resultado em `data/grupos.csv`.
+  - 3 seleções novas adicionadas a `selecoes.csv`: Rússia, Equador, Gana.
+  - **Sedes/cidades desta edição (12, mais que o normal de 8):** Nova York, Los Angeles, Dallas, San Francisco, Seattle, Chicago, Washington D.C., Houston, Miami, Philadelphia, Kansas City, Atlanta. Ainda não associadas a jogos específicos.
+  - Jogos de 1996 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
