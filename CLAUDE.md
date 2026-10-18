@@ -134,6 +134,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     Oitavas/quartas/semis com 3 disputas de pênaltis (Inglaterra 4x3 Austrália, Brasil 4x3 Tunísia, Alemanha 5x4 Uruguai). **Final: Argentina 0x1 Alemanha — Alemanha conquista o 3º título** (1993, 1995, 1997), ampliando a liderança no ranking histórico. `edicoes.csv`: campeão Alemanha, vice Argentina, 3º Inglaterra, 4º Espanha.
   - Sedes/cidades de 1997 (10, informadas mas não associadas aos jogos — usuário optou por não detalhar cidade por partida nesta edição).
 - `ranking_historico.csv` recalculado para `ano_referencia=1998`, acumulando 1990-1997 (512 jogos). Topo: **Alemanha (119 pts, folga confortável)**, Itália (108), França (105), Brasil (104), Espanha (96), Inglaterra (95), Uruguai (84), Holanda (78).
+- **Copa de 1998: potes e grupos definidos.** Sede Brasil, campeão anterior Alemanha. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-1997) entre as 30 seleções da lista.
+  - Pote 1: Brasil, Alemanha, Itália (108), França (105), Espanha (96), Inglaterra (95), Uruguai (84), Holanda (78).
+  - Pote 2: Argentina (60), México (59), Austrália (33), Dinamarca (28), Egito (24), Japão (23), Portugal (22), Nova Zelândia (21).
+  - Pote 3: Suíça (21), Colômbia (17), Estados Unidos (17), África do Sul (12), Bélgica (9), Coreia do Sul (7), Costa Rica (7), Irã (7).
+  - Pote 4: Marrocos (7), Gana (6), Rússia (5), Cuba (2), Senegal (1), Angola (0), Palestina (0), Porto Rico (0).
+  - Grupos sorteados com `random.seed(1998)`, Brasil travado no Grupo A. Resultado em `data/grupos.csv`.
+  - 2 seleções novas adicionadas a `selecoes.csv`: Palestina, Porto Rico.
+  - **Sedes/cidades desta edição (12):** São Paulo, Rio de Janeiro, Belo Horizonte, Porto Alegre, Fortaleza, Salvador, Recife, Belém, Goiânia, Curitiba, Manaus, São Luís. Ainda não associadas a jogos específicos.
+  - Jogos de 1998 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
