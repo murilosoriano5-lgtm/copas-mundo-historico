@@ -142,7 +142,10 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Grupos sorteados com `random.seed(1998)`, Brasil travado no Grupo A. Resultado em `data/grupos.csv`.
   - 2 seleções novas adicionadas a `selecoes.csv`: Palestina, Porto Rico.
   - **Sedes/cidades desta edição (12):** São Paulo, Rio de Janeiro, Belo Horizonte, Porto Alegre, Fortaleza, Salvador, Recife, Belém, Goiânia, Curitiba, Manaus, São Luís. Ainda não associadas a jogos específicos.
-  - Jogos de 1998 ainda não disputados/registrados em `jogos.csv`.
+  - **Copa de 1998 completa (64/64 jogos).** Grupos: A: Brasil/Argentina (decidido por gols marcados, mesmos pontos e saldo) · B: Holanda/Suíça · C: Dinamarca/Alemanha (zebra: campeã defensora só 2ª) · D: Espanha/Nova Zelândia · E: França/Colômbia · F: Uruguai/Austrália · G: Itália/Portugal · H: Inglaterra/México. Oitavas com zebras fortes: Nova Zelândia elimina a Dinamarca, Austrália elimina a França, Portugal elimina a Inglaterra (prorrogação). **Final: Brasil 4x2 Alemanha — Brasil conquista o 4º título** (1990, 1994, 1996, 1998), isolado como maior campeão. `edicoes.csv`: campeão Brasil, vice Alemanha, 3º Uruguai, 4º Austrália.
+    Correção aplicada: nas quartas, "Austrália 2(4)x1(2) Itália" como enviado era inconsistente (placar direto não combina com disputa de pênaltis); confirmado com o usuário — foi 1x1 no tempo normal, Austrália venceu nos pênaltis por 4x2.
+  - Sedes/cidades de 1998 (12) informadas mas não associadas aos jogos.
+- `ranking_historico.csv` recalculado para `ano_referencia=1999`, acumulando 1990-1998 (576 jogos). Topo: **Alemanha (134 pts)**, Brasil/Itália (121, empatados), França (114), Inglaterra (104), Espanha (103), Uruguai (100), Holanda (85).
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
