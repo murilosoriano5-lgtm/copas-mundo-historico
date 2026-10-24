@@ -167,7 +167,10 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Grupos sorteados com `random.seed(2000)`, Rússia travada no Grupo A. Resultado em `data/grupos.csv`.
   - 2 seleções novas adicionadas a `selecoes.csv`: República Tcheca, Fiji.
   - **Sedes/cidades desta edição (12):** Moscou I, Moscou II, São Petersburgo, Sochi, Samara, Volgogrado, Kazan, Kaliningrado, Ecaterimburgo, Nizhny Novgorod, Rostov, Krasnodar. Ainda não associadas a jogos específicos.
-  - Jogos de 2000 ainda não disputados/registrados em `jogos.csv`.
+  - **Copa de 2000 completa (64/64 jogos).** Grupos: A: Holanda/Rússia (sede só 2º) · B: Brasil/Suécia · C: Uruguai/Arábia Saudita · D: Inglaterra/Portugal · E: Itália/Argentina · F: Austrália/Espanha · G: Alemanha/Nova Zelândia · H: França/Polônia.
+    **Zebra histórica:** a Rússia (sede) eliminou o Brasil nos pênaltis ainda nas oitavas. **Final: Uruguai 0x1 Austrália — Austrália conquista o 1º título de uma seleção da confederação Ásia/Oceania**, depois de eliminar Espanha, Argentina (PR), Nova Zelândia (pên.) e Inglaterra (PR) no caminho — campanha de zebra do início ao fim. `edicoes.csv`: campeão Austrália, vice Uruguai, 3º Itália, 4º Inglaterra.
+  - Sedes/cidades de 2000 (12) informadas mas não associadas aos jogos.
+- `ranking_historico.csv` recalculado para `ano_referencia=2001`, acumulando 1990-2000 (704 jogos). Topo: **Alemanha (167 pts)**, Itália (149), Brasil (147), Inglaterra (135), Uruguai (131), França (130), Espanha (117), Holanda (107). Austrália (campeã) sobe para 70 pts, ainda fora do top 10 do acumulado histórico — título não implica ranking alto ainda.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
