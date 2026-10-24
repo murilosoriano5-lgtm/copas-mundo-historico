@@ -181,7 +181,10 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Grupos sorteados com `random.seed(2001)`, Inglaterra travada no Grupo A. Usuário pediu para trocar os grupos B e C de letra (sem novo sorteio, só relabeling): B passou a ser Espanha/Japão/Coreia do Sul/República Tcheca, C passou a ser Alemanha/Estados Unidos/Peru/Costa do Marfim. Resultado final em `data/grupos.csv`.
   - 5 seleções novas adicionadas a `selecoes.csv`: Costa do Marfim, Guiné, República Democrática do Congo, Jordânia, Iraque.
   - **Sedes/cidades desta edição (10):** Londres I, Londres II, Manchester, Liverpool, Birmingham, Newcastle, Southampton, Sunderland, Leeds, Sheffield. Ainda não associadas a jogos específicos.
-  - Jogos de 2001 ainda não disputados/registrados em `jogos.csv`.
+  - **Copa de 2001 completa (64/64 jogos).** Grupos: A: Inglaterra/Argentina · B: Espanha/República Tcheca · C: Alemanha/Estados Unidos · D: Nova Zelândia/Brasil (zebra: Brasil só 2º) · E: França/Croácia · F: Holanda/Itália (zebra: Itália só 2º) · G: Austrália/Portugal · H: Uruguai/México.
+    **Final: Inglaterra 2x1 Argentina (prorrogação) — Inglaterra conquista o 1º título, jogando em casa.** `edicoes.csv`: campeão Inglaterra, vice Argentina, 3º Austrália, 4º Holanda.
+  - Sedes/cidades de 2001 (10) informadas mas não associadas aos jogos.
+- `ranking_historico.csv` recalculado para `ano_referencia=2002`, acumulando 1990-2001 (768 jogos). Topo: **Alemanha (179 pts)**, Inglaterra (156, subiu com o título), Itália (154), Brasil (153), França (140), Uruguai (138), Espanha (127), Holanda (120).
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
