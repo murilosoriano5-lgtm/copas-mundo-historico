@@ -171,6 +171,17 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     **Zebra histórica:** a Rússia (sede) eliminou o Brasil nos pênaltis ainda nas oitavas. **Final: Uruguai 0x1 Austrália — Austrália conquista o 1º título de uma seleção da confederação Ásia/Oceania**, depois de eliminar Espanha, Argentina (PR), Nova Zelândia (pên.) e Inglaterra (PR) no caminho — campanha de zebra do início ao fim. `edicoes.csv`: campeão Austrália, vice Uruguai, 3º Itália, 4º Inglaterra.
   - Sedes/cidades de 2000 (12) informadas mas não associadas aos jogos.
 - `ranking_historico.csv` recalculado para `ano_referencia=2001`, acumulando 1990-2000 (704 jogos). Topo: **Alemanha (167 pts)**, Itália (149), Brasil (147), Inglaterra (135), Uruguai (131), França (130), Espanha (117), Holanda (107). Austrália (campeã) sobe para 70 pts, ainda fora do top 10 do acumulado histórico — título não implica ranking alto ainda.
+- **Copa de 2001: potes e grupos definidos.** Sede Inglaterra, campeão anterior Austrália.
+  - **Correção aplicada:** a lista original da América vinha com o cabeçalho "8 Vagas" mas 10 seleções listadas (Jamaica e Trinidad e Tobago sobrando no fim). Confirmado com o usuário: são 8 vagas mesmo, Jamaica e Trinidad e Tobago removidas da lista de 2001 (não participam desta edição).
+  - Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2000) entre as 30 seleções da lista.
+  - Pote 1: Inglaterra, Austrália, Alemanha (167), Itália (149), Brasil (147), Uruguai (131), França (130), Espanha (117).
+  - Pote 2: Holanda (107), Argentina (83), México (75), Nova Zelândia (45), Portugal (43), Japão (30), Estados Unidos (24), Nigéria (21).
+  - Pote 3: Rússia (16), Gana (14), Bélgica (12), Chile (8), Coreia do Sul (8), Peru (8), Líbano (7), Equador (3).
+  - Pote 4: Senegal (3), Croácia (2), Costa do Marfim (0), Guiné (0), Iraque (0), Jordânia (0), República Democrática do Congo (0), República Tcheca (0).
+  - Grupos sorteados com `random.seed(2001)`, Inglaterra travada no Grupo A. Resultado em `data/grupos.csv`.
+  - 5 seleções novas adicionadas a `selecoes.csv`: Costa do Marfim, Guiné, República Democrática do Congo, Jordânia, Iraque.
+  - **Sedes/cidades desta edição (10):** Londres I, Londres II, Manchester, Liverpool, Birmingham, Newcastle, Southampton, Sunderland, Leeds, Sheffield. Ainda não associadas a jogos específicos.
+  - Jogos de 2001 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
