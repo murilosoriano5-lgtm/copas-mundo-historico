@@ -178,7 +178,7 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Pote 2: Holanda (107), Argentina (83), México (75), Nova Zelândia (45), Portugal (43), Japão (30), Estados Unidos (24), Nigéria (21).
   - Pote 3: Rússia (16), Gana (14), Bélgica (12), Chile (8), Coreia do Sul (8), Peru (8), Líbano (7), Equador (3).
   - Pote 4: Senegal (3), Croácia (2), Costa do Marfim (0), Guiné (0), Iraque (0), Jordânia (0), República Democrática do Congo (0), República Tcheca (0).
-  - Grupos sorteados com `random.seed(2001)`, Inglaterra travada no Grupo A. Resultado em `data/grupos.csv`.
+  - Grupos sorteados com `random.seed(2001)`, Inglaterra travada no Grupo A. Usuário pediu para trocar os grupos B e C de letra (sem novo sorteio, só relabeling): B passou a ser Espanha/Japão/Coreia do Sul/República Tcheca, C passou a ser Alemanha/Estados Unidos/Peru/Costa do Marfim. Resultado final em `data/grupos.csv`.
   - 5 seleções novas adicionadas a `selecoes.csv`: Costa do Marfim, Guiné, República Democrática do Congo, Jordânia, Iraque.
   - **Sedes/cidades desta edição (10):** Londres I, Londres II, Manchester, Liverpool, Birmingham, Newcastle, Southampton, Sunderland, Leeds, Sheffield. Ainda não associadas a jogos específicos.
   - Jogos de 2001 ainda não disputados/registrados em `jogos.csv`.
