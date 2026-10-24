@@ -185,6 +185,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     **Final: Inglaterra 2x1 Argentina (prorrogação) — Inglaterra conquista o 1º título, jogando em casa.** `edicoes.csv`: campeão Inglaterra, vice Argentina, 3º Austrália, 4º Holanda.
   - Sedes/cidades de 2001 (10) informadas mas não associadas aos jogos.
 - `ranking_historico.csv` recalculado para `ano_referencia=2002`, acumulando 1990-2001 (768 jogos). Topo: **Alemanha (179 pts)**, Inglaterra (156, subiu com o título), Itália (154), Brasil (153), França (140), Uruguai (138), Espanha (127), Holanda (120).
+- **Copa de 2002: potes e grupos definidos.** Sede Canadá, campeão anterior Inglaterra. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2001) entre as 30 seleções da lista.
+  - Pote 1: Canadá, Inglaterra, Alemanha (179), Itália (154), Brasil (153), França (140), Uruguai (138), Espanha (127).
+  - Pote 2: Holanda (120), Argentina (94), Austrália (86), México (80), Nova Zelândia (58), Portugal (51), Suécia (43), Dinamarca (37).
+  - Pote 3: Japão (30), Tunísia (29), Estados Unidos (28), Paraguai (21), Gana (18), Argélia (14), Líbano (8), Senegal (6).
+  - Pote 4: Irlanda (5), Hungria (4), Iraque (3), Cazaquistão (0), Guatemala (0), Guiné Equatorial (0), Honduras (0), Togo (0).
+  - Grupos sorteados com `random.seed(2002)`, Canadá travado no Grupo A. Resultado em `data/grupos.csv`.
+  - 4 seleções novas adicionadas a `selecoes.csv`: Honduras, Guiné Equatorial, Togo, Cazaquistão.
+  - **Sedes/cidades desta edição (8):** Montreal, Toronto I, Toronto II, Vancouver, Ottawa, Calgary, Edmonton, North York. Ainda não associadas a jogos específicos.
+  - Jogos de 2002 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
