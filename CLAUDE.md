@@ -193,7 +193,10 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Grupos sorteados com `random.seed(2002)`, Canadá travado no Grupo A. Resultado em `data/grupos.csv`.
   - 4 seleções novas adicionadas a `selecoes.csv`: Honduras, Guiné Equatorial, Togo, Cazaquistão.
   - **Sedes/cidades desta edição (8):** Montreal, Toronto I, Toronto II, Vancouver, Ottawa, Calgary, Edmonton, North York. Ainda não associadas a jogos específicos.
-  - Jogos de 2002 ainda não disputados/registrados em `jogos.csv`.
+  - **Copa de 2002 completa (64/64 jogos).** Grupos: A: México/Canadá · B: Alemanha/Suécia · C: Argentina/Espanha · D: Brasil/Portugal · E: Itália/Holanda · F: França/Estados Unidos · G: Austrália/Inglaterra · H: Uruguai/Nova Zelândia.
+    **Maior zebra do projeto até aqui:** Nova Zelândia (Pote 2, 2ª colocada do Grupo H) eliminou Austrália, Itália e Argentina no caminho e **goleou a Alemanha por 3x0 na final**, conquistando o 1º título. `edicoes.csv`: campeão Nova Zelândia, vice Alemanha, 3º França, 4º Argentina.
+  - Sedes/cidades de 2002 (8) informadas mas não associadas aos jogos.
+- `ranking_historico.csv` recalculado para `ano_referencia=2003`, acumulando 1990-2002 (832 jogos). Topo: **Alemanha (195 pts)**, Itália (166), Brasil (165), Inglaterra (162), França (156), Uruguai (148), Espanha (133), Holanda (126). Nova Zelândia (campeã) sobe para 73 pts, 12º lugar.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
