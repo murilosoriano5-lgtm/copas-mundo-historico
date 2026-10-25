@@ -197,6 +197,17 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     **Maior zebra do projeto até aqui:** Nova Zelândia (Pote 2, 2ª colocada do Grupo H) eliminou Austrália, Itália e Argentina no caminho e **goleou a Alemanha por 3x0 na final**, conquistando o 1º título. `edicoes.csv`: campeão Nova Zelândia, vice Alemanha, 3º França, 4º Argentina.
   - Sedes/cidades de 2002 (8) informadas mas não associadas aos jogos.
 - `ranking_historico.csv` recalculado para `ano_referencia=2003`, acumulando 1990-2002 (832 jogos). Topo: **Alemanha (195 pts)**, Itália (166), Brasil (165), Inglaterra (162), França (156), Uruguai (148), Espanha (133), Holanda (126). Nova Zelândia (campeã) sobe para 73 pts, 12º lugar.
+- **Copa de 2003: potes e grupos definidos.** Sede Colômbia, campeão anterior Nova Zelândia.
+  - **Correção aplicada:** "Manizales" aparecia duas vezes na lista de sedes (posições 7 e 9); usuário confirmou que a posição 9 era Bucaramanga.
+  - Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2002) entre as 30 seleções da lista.
+  - Pote 1: Colômbia, Nova Zelândia, Alemanha (195), Itália (166), Brasil (165), Inglaterra (162), França (156), Uruguai (148).
+  - Pote 2: Espanha (133), Holanda (126), Argentina (107), Austrália (95), México (89), Portugal (57), Dinamarca (41), Estados Unidos (34).
+  - Pote 3: Japão (31), Gana (21), Nigéria (21), Argélia (17), Coreia do Sul (11), República Tcheca (6), Bolívia (3), Honduras (3).
+  - Pote 4: Iraque (3), Emirados Árabes (0), Irlanda do Norte (0), Libéria (0), Moçambique (0), Nova Caledônia (0), Panamá (0), Togo (0).
+  - Grupos sorteados com `random.seed(2003)`, Colômbia travada no Grupo A. Resultado em `data/grupos.csv`.
+  - 4 seleções novas adicionadas a `selecoes.csv`: Irlanda do Norte, Panamá, Moçambique, Nova Caledônia.
+  - **Sedes/cidades desta edição (10, corrigida):** Bogotá, Cali, Barranquilla, Medellín, Pereira, Cúcuta, Manizales, Palmira, Bucaramanga, Ibagué. Ainda não associadas a jogos específicos.
+  - Jogos de 2003 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
