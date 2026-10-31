@@ -212,6 +212,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Sedes/cidades de 2003 (10, com a correção Manizales/Bucaramanga) informadas mas não associadas aos jogos.
 - `ranking_historico.csv` recalculado para `ano_referencia=2004`, acumulando 1990-2003 (896 jogos). Topo: **Alemanha (207 pts)**, Inglaterra (179, subiu com o 2º título), Itália (175), Brasil/França (174, empatados), Uruguai (161), Espanha (139), Holanda (135).
   - Nota técnica de sessão: nesta edição o diretório local do clone (`/home/user/copas-mundo-historico`) foi perdido por reinício do container, mas como tudo estava commitado e empurrado, um `git clone` recuperou o estado sem perda de dados. Lição: nunca deixar trabalho só local sem commit/push.
+- **Copa de 2004: potes e grupos definidos.** Sede Espanha, campeão anterior Inglaterra. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2003) entre as 30 seleções da lista.
+  - Pote 1: Espanha, Inglaterra, Alemanha (207), Itália (175), Brasil (174), França (174), Uruguai (161), Holanda (135).
+  - Pote 2: Argentina (117), Austrália (107), México (96), Nova Zelândia (84), Portugal (63), Suécia (48), Colômbia (37), Estados Unidos (35).
+  - Pote 3: Japão (34), Tunísia (31), Gana (27), Paraguai (25), Nigéria (24), Polônia (21), Argélia (20), Coreia do Sul (14).
+  - Pote 4: República Tcheca (9), Croácia (7), Costa do Marfim (4), Romênia (2), Qatar (0), República Dominicana (0), Serra Leoa (0), Tailândia (0).
+  - Grupos sorteados com `random.seed(2004)`, Espanha travada no Grupo A. Resultado em `data/grupos.csv`.
+  - 4 seleções novas adicionadas a `selecoes.csv`: República Dominicana, Serra Leoa, Qatar, Tailândia.
+  - **Sedes/cidades desta edição (6):** Madrid, Barcelona, Bilbao, Sevilha, Valência, La Coruña. Ainda não associadas a jogos específicos.
+  - Jogos de 2004 ainda não disputados/registrados em `jogos.csv`.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
