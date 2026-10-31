@@ -207,7 +207,11 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Grupos sorteados com `random.seed(2003)`, Colômbia travada no Grupo A. Resultado em `data/grupos.csv`.
   - 4 seleções novas adicionadas a `selecoes.csv`: Irlanda do Norte, Panamá, Moçambique, Nova Caledônia.
   - **Sedes/cidades desta edição (10, corrigida):** Bogotá, Cali, Barranquilla, Medellín, Pereira, Cúcuta, Manizales, Palmira, Bucaramanga, Ibagué. Ainda não associadas a jogos específicos.
-  - Jogos de 2003 ainda não disputados/registrados em `jogos.csv`.
+  - **Copa de 2003 completa (64/64 jogos).** Grupos: A: Colômbia/México · B: Argentina/Uruguai · C: Itália/Austrália · D: Holanda/Brasil (zebra: Brasil só 2º) · E: Alemanha/Espanha · F: Inglaterra/Portugal · G: França/Irlanda do Norte · H: Nova Zelândia/Gana.
+    **Final: Uruguai 1x2 Inglaterra — Inglaterra conquista o 2º título** (2001, 2003). `edicoes.csv`: campeão Inglaterra, vice Uruguai, 3º França, 4º Austrália.
+  - Sedes/cidades de 2003 (10, com a correção Manizales/Bucaramanga) informadas mas não associadas aos jogos.
+- `ranking_historico.csv` recalculado para `ano_referencia=2004`, acumulando 1990-2003 (896 jogos). Topo: **Alemanha (207 pts)**, Inglaterra (179, subiu com o 2º título), Itália (175), Brasil/França (174, empatados), Uruguai (161), Espanha (139), Holanda (135).
+  - Nota técnica de sessão: nesta edição o diretório local do clone (`/home/user/copas-mundo-historico`) foi perdido por reinício do container, mas como tudo estava commitado e empurrado, um `git clone` recuperou o estado sem perda de dados. Lição: nunca deixar trabalho só local sem commit/push.
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
