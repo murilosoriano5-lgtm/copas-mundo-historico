@@ -244,7 +244,17 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     A: Portugal/Nova Zelândia/Argélia/Omã · B: Itália/Japão/Gana/Somália · C: Alemanha/Colômbia/Croácia/Serra Leoa · D: Brasil/Austrália/Polônia/Eslovênia · E: Uruguai/México/Equador/Zâmbia · F: França/Argentina/Noruega/Ucrânia · G: Espanha/Holanda/Paraguai/Angola · H: Inglaterra/Estados Unidos/Coreia do Sul/Qatar.
   - 4 seleções novas adicionadas a `selecoes.csv`: Eslovênia, Ucrânia, Zâmbia, Somália.
   - **Sedes desta edição (8):** Lisboa I, Lisboa II, Cidade do Porto I, Cidade do Porto II, Guimarães, Braga, Leiria, Portimão. Ainda não associadas a jogos específicos.
-  - Jogos de 2005 ainda não disputados/registrados em `jogos.csv`.
+  - **Fase de grupos de 2005 completa** (48 jogos). Nenhum grupo precisou de confronto direto ou ranking histórico — todos resolvidos por pontos + saldo de gols.
+    Classificação: A: Portugal(9)/Nova Zelândia(6) · B: Itália(7)/Gana(5) · C: Croácia(7)/Alemanha(5) · D: Austrália(7)/Brasil(6) · E: México(9)/Uruguai(6) · F: Argentina(7)/França(6) · G: Espanha(9)/Holanda(6) · H: Inglaterra(7)/Coreia do Sul(6).
+    - Zebras: **Brasil só 2º no Grupo D** (atrás da Austrália, pote 2) · **Uruguai só 2º no Grupo E** (atrás do México, pote 2).
+  - **Copa de 2005 completa (64/64 jogos).** Oitavas (Lado A): Portugal 2x1 Gana, Croácia 1(4)x1(5) Brasil (pênaltis), México 1(3)x1(4) França (pênaltis), Espanha 1x0 Coreia do Sul · (Lado B): Itália 1x0 Nova Zelândia, Austrália 2x3 Alemanha, Argentina 2x0 Uruguai, Inglaterra 2x3 Holanda.
+    Quartas: Portugal 2x1 Brasil, Espanha 2x1 França (Lado A) · Itália 0x2 Alemanha (PR), Argentina 1(4)x1(5) Holanda (pênaltis) (Lado B).
+    Semifinal: Portugal 2x1 Espanha · Alemanha 1x0 Holanda.
+    Terceiro lugar: Espanha 0x2 Holanda.
+    **Final: Portugal 2x1 Alemanha (prorrogação) — Portugal é campeã jogando em casa (1º título), repetindo o feito do anfitrião em 2004 (Espanha).**
+    `edicoes.csv` atualizado: campeão Portugal, vice Alemanha, 3º Holanda, 4º Espanha.
+    - **Pendência de precisão:** 2 jogos decididos na prorrogação (marcados "(PR)") só tiveram o placar final informado, sem o split tempo normal/prorrogação: Itália 0x2 Alemanha (quartas) e Portugal 2x1 Alemanha (final).
+- `ranking_historico.csv` recalculado para `ano_referencia=2006`, acumulando 1990-2005 (1024 jogos). Topo: **Alemanha (234 pts)**, Itália (198), Inglaterra (193), Brasil (192), França (189), Uruguai (174), Espanha (173), Holanda (167).
 
 ## Como adicionar dados
 
