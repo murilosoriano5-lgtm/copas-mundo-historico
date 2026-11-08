@@ -255,6 +255,16 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     `edicoes.csv` atualizado: campeão Portugal, vice Alemanha, 3º Holanda, 4º Espanha.
     - **Pendência de precisão:** 2 jogos decididos na prorrogação (marcados "(PR)") só tiveram o placar final informado, sem o split tempo normal/prorrogação: Itália 0x2 Alemanha (quartas) e Portugal 2x1 Alemanha (final).
 - `ranking_historico.csv` recalculado para `ano_referencia=2006`, acumulando 1990-2005 (1024 jogos). Topo: **Alemanha (234 pts)**, Itália (198), Inglaterra (193), Brasil (192), França (189), Uruguai (174), Espanha (173), Holanda (167).
+- **Copa de 2006: potes e grupos definidos.** Sede Holanda, campeão anterior Portugal. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2005) entre as 30 seleções da lista.
+  - Pote 1: Holanda, Portugal, Alemanha (234), Itália (198), Inglaterra (193), Brasil (192), França (189), Uruguai (174).
+  - Pote 2: Espanha (173), Argentina (133), Austrália (120), México (109), Nova Zelândia (100), Suécia (52), Japão (42), Estados Unidos (39).
+  - Pote 3: Gana (34), Tunísia (31), Nigéria (27), Argélia (24), Coreia do Sul (23), Croácia (21), Marrocos (14), Bélgica (13).
+  - Pote 4: República Tcheca (12), Costa do Marfim (7), El Salvador (6), Honduras (3), Qatar (3), Turquia (2), Filipinas (0), São Cristóvão e Névis (0).
+  - Grupos sorteados com `random.seed(2006)`, Holanda travada no Grupo A. Resultado em `data/grupos.csv`:
+    A: Holanda/Nova Zelândia/Coreia do Sul/Qatar · B: Itália/Suécia/Nigéria/São Cristóvão e Névis · C: França/Espanha/Bélgica/Costa do Marfim · D: Alemanha/Japão/Tunísia/Filipinas · E: Uruguai/Austrália/Gana/Honduras · F: Portugal/Estados Unidos/Croácia/República Tcheca · G: Inglaterra/Argentina/Marrocos/El Salvador · H: Brasil/México/Argélia/Turquia.
+  - 2 seleções novas adicionadas a `selecoes.csv`: São Cristóvão e Névis, Filipinas. ("Coréia do Sul" do texto do usuário normalizada para a grafia já existente "Coreia do Sul".)
+  - **Sedes desta edição (4):** Amsterdã (abertura e final), Eindhoven, Rotterdam, Haia. Ainda não associadas a jogos específicos.
+  - Jogos de 2006 ainda não disputados/registrados em `jogos.csv`.
 
 ## Como adicionar dados
 
