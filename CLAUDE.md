@@ -220,7 +220,17 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Grupos sorteados com `random.seed(2004)`, Espanha travada no Grupo A. Resultado em `data/grupos.csv`.
   - 4 seleções novas adicionadas a `selecoes.csv`: República Dominicana, Serra Leoa, Qatar, Tailândia.
   - **Sedes/cidades desta edição (6):** Madrid, Barcelona, Bilbao, Sevilha, Valência, La Coruña. Ainda não associadas a jogos específicos.
-  - Jogos de 2004 ainda não disputados/registrados em `jogos.csv`.
+  - **Fase de grupos de 2004 completa** (48 jogos). Nenhum grupo precisou de confronto direto ou ranking histórico — todos resolvidos por pontos + saldo de gols.
+    Classificação: A: Espanha(9)/Paraguai(6) · B: Itália(9)/Polônia(6) · C: Portugal(9)/Uruguai(6) · D: Brasil(7)/Argentina(5) · E: Alemanha(7)/Suécia(4) · F: Holanda(9)/Austrália(6) · G: Nova Zelândia(9)/Inglaterra(6) · H: França(7)/Croácia(5).
+    - Zebra: **Inglaterra (campeã defensora) só 2º no Grupo G**, atrás da Nova Zelândia (campeã de 2002).
+  - **Copa de 2004 completa (64/64 jogos).** Oitavas (Lado A): Espanha 2x1 Polônia, Portugal 2x1 Argentina, Alemanha 2x1 Austrália, Nova Zelândia 1(4)x1(3) Croácia (pênaltis) · (Lado B): Itália 1x0 Paraguai, Brasil 1(4)x1(3) Uruguai (pênaltis), Holanda 2x1 Suécia, França 1(4)x1(5) Inglaterra (pênaltis — campeã defensora eliminada nas oitavas).
+    Quartas: Espanha 3x0 Portugal, Alemanha 3x1 Nova Zelândia (Lado A) · Itália 1(4)x1(5) Brasil (pênaltis), Holanda 2x0 Inglaterra (Lado B).
+    Semifinal: Espanha 1x0 Alemanha · Brasil 2(5)x2(4) Holanda (pênaltis) — **Brasil venceu 3 disputas de pênaltis seguidas (oitavas, quartas e semi) até a final.**
+    Terceiro lugar: Holanda 3x1 Alemanha — Alemanha, nº1 do ranking histórico e pote 1, termina em 4º.
+    **Final: Espanha 0(4)x0(3) Brasil — Espanha é campeã jogando em casa (1º título), vencendo nos pênaltis.**
+    `edicoes.csv` atualizado: campeão Espanha, vice Brasil, 3º Holanda, 4º Alemanha.
+    - **Pendência de precisão:** 5 jogos decididos na prorrogação (marcados "(PR)" pelo usuário) só tiveram o placar final informado, sem o split tempo normal/prorrogação: Espanha 2x1 Polônia, Portugal 2x1 Argentina, Alemanha 2x1 Austrália, Itália 1x0 Paraguai (oitavas) e Espanha 1x0 Alemanha (semifinal). Registrados com `gols_prorrogacao_*` em branco — não inventado.
+- `ranking_historico.csv` recalculado para `ano_referencia=2005`, acumulando 1990-2004 (960 jogos). Topo: **Alemanha (220 pts)**, Itália (188), Inglaterra (186), Brasil (185), França (182), Uruguai (168), Espanha (158, subiu com o título), Holanda (154).
 - `potes.csv` e `grupos.csv` já têm a Copa de 1990 completa: potes fornecidos pelo usuário, grupos sorteados por script Python com `random.seed(1990)`. Restrição aplicada no sorteio: França forçada no Grupo A e Brasil no Grupo B (lados opostos da chave), a pedido do usuário, para que só se encontrem na final se ambas vencerem seus grupos. Demais posições sorteadas aleatoriamente respeitando 1 seleção por pote por grupo.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
