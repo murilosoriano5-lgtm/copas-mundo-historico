@@ -235,6 +235,16 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
 - `selecoes.csv` tem as 32 seleções de 1990.
 - Sedes, campeões e demais resultados são inventados pelo usuário — não usar dados reais da FIFA como referência ou preenchimento padrão.
 - Regulamento completo (potes, sorteio, chaveamento, desempate, ranking) já fechado e documentado em `docs/REGRAS_DO_TORNEIO.md`.
+- **Copa de 2005: potes e grupos definidos.** Sede Portugal, campeão anterior Espanha. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2004) entre as 30 seleções da lista.
+  - Pote 1: Portugal, Espanha, Alemanha (220), Itália (188), Inglaterra (186), Brasil (185), França (182), Uruguai (168).
+  - Pote 2: Holanda (154), Argentina (122), Austrália (113), México (99), Nova Zelândia (94), Colômbia (40), Estados Unidos (38), Japão (38).
+  - Pote 3: Paraguai (31), Gana (29), Polônia (27), Argélia (21), Coreia do Sul (17), Croácia (13), Noruega (6), Equador (3).
+  - Pote 4: Angola (1), Eslovênia (0), Omã (0), Qatar (0), Serra Leoa (0), Somália (0), Ucrânia (0), Zâmbia (0) — os 7 times com 0 pontos empatados foram ordenados por critério alfabético normalizado (sem acento).
+  - Grupos sorteados com `random.seed(2005)`, Portugal travado no Grupo A. Resultado em `data/grupos.csv`:
+    A: Portugal/Nova Zelândia/Argélia/Omã · B: Itália/Japão/Gana/Somália · C: Alemanha/Colômbia/Croácia/Serra Leoa · D: Brasil/Austrália/Polônia/Eslovênia · E: Uruguai/México/Equador/Zâmbia · F: França/Argentina/Noruega/Ucrânia · G: Espanha/Holanda/Paraguai/Angola · H: Inglaterra/Estados Unidos/Coreia do Sul/Qatar.
+  - 4 seleções novas adicionadas a `selecoes.csv`: Eslovênia, Ucrânia, Zâmbia, Somália.
+  - **Sedes desta edição (8):** Lisboa I, Lisboa II, Cidade do Porto I, Cidade do Porto II, Guimarães, Braga, Leiria, Portimão. Ainda não associadas a jogos específicos.
+  - Jogos de 2005 ainda não disputados/registrados em `jogos.csv`.
 
 ## Como adicionar dados
 
