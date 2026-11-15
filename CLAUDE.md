@@ -275,6 +275,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     `edicoes.csv` atualizado: campeão Holanda, vice Uruguai, 3º Alemanha, 4º Austrália.
     - **Pendência de precisão:** 3 jogos decididos na prorrogação (marcados "(PR)") só tiveram o placar final informado, sem o split tempo normal/prorrogação: Espanha 1x0 Japão (oitavas), Austrália 1x0 Turquia e Nova Zelândia 0x2 Alemanha (quartas), e a final Holanda 1x0 Uruguai.
 - `ranking_historico.csv` recalculado para `ano_referencia=2007`, acumulando 1990-2006 (1088 jogos). Topo: **Alemanha (250 pts)**, Itália (206), Inglaterra (201), Brasil (200), França (195), Uruguai (189), Holanda (188, subiu com o título), Espanha (183).
+- **Copa de 2007: potes e grupos definidos.** Sede Coreia do Sul (usuário grafou "Coréia do Sul", normalizado para a grafia já existente), campeão anterior Holanda. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2006) entre as 30 seleções da lista.
+  - Pote 1: Coreia do Sul, Holanda, Alemanha (250), Itália (206), Inglaterra (201), Brasil (200), França (195), Uruguai (189).
+  - Pote 2: Espanha (183), Argentina (141), Austrália (133), México (110), Nova Zelândia (107), Portugal (103), Suécia (56), Japão (48).
+  - Pote 3: Dinamarca (45), Estados Unidos (42), Gana (37), Paraguai (34), Nigéria (28), Argélia (26), Croácia (24), África do Sul (12).
+  - Pote 4: Costa Rica (10), Qatar (6), Belize (0), Jordânia (0), Sérvia (0), Suazilândia (0), Uzbequistão (0), Zimbábue (0).
+  - Grupos sorteados com `random.seed(2007)`, Coreia do Sul travada no Grupo A. Resultado em `data/grupos.csv`:
+    A: Coreia do Sul/Japão/Estados Unidos/Costa Rica · B: Brasil/Suécia/Paraguai/Jordânia · C: Uruguai/México/Dinamarca/Qatar · D: Itália/Espanha/Argélia/Belize · E: Inglaterra/Argentina/Nigéria/Zimbábue · F: Holanda/Portugal/Gana/Uzbequistão · G: França/Nova Zelândia/África do Sul/Suazilândia · H: Alemanha/Austrália/Croácia/Sérvia.
+  - 4 seleções novas adicionadas a `selecoes.csv`: Sérvia, Belize, Suazilândia, Uzbequistão.
+  - Jogos de 2007 ainda não disputados/registrados em `jogos.csv`.
 
 ## Como adicionar dados
 
