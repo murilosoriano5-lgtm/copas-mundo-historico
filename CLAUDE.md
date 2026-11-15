@@ -264,7 +264,17 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     A: Holanda/Nova Zelândia/Coreia do Sul/Qatar · B: Itália/Suécia/Nigéria/São Cristóvão e Névis · C: França/Espanha/Bélgica/Costa do Marfim · D: Alemanha/Japão/Tunísia/Filipinas · E: Uruguai/Austrália/Gana/Honduras · F: Portugal/Estados Unidos/Croácia/República Tcheca · G: Inglaterra/Argentina/Marrocos/El Salvador · H: Brasil/México/Argélia/Turquia.
   - 2 seleções novas adicionadas a `selecoes.csv`: São Cristóvão e Névis, Filipinas. ("Coréia do Sul" do texto do usuário normalizada para a grafia já existente "Coreia do Sul".)
   - **Sedes desta edição (4):** Amsterdã (abertura e final), Eindhoven, Rotterdam, Haia. Ainda não associadas a jogos específicos.
-  - Jogos de 2006 ainda não disputados/registrados em `jogos.csv`.
+  - **Fase de grupos de 2006 completa** (48 jogos). Nenhum grupo precisou de confronto direto ou ranking histórico — todos resolvidos por pontos + saldo de gols (Grupo G: Inglaterra e Argentina empatados em pontos, Inglaterra 1º por saldo +4 a +2).
+    Classificação: A: Holanda(9)/Nova Zelândia(6) · B: Itália(7)/Suécia(4) · C: Espanha(7)/França(6) · D: Alemanha(7)/Japão(6) · E: Austrália(9)/Uruguai(6) · F: Portugal(7)/República Tcheca(4) · G: Inglaterra(7)/Argentina(7) · H: Brasil(7)/Turquia(5).
+  - **Correção de digitação confirmada pelo usuário:** oitavas Austrália x República Tcheca estava anotada "1(4)x0(3)" (placar normal diferente com pênaltis, o que é impossível); usuário confirmou que foi 1x1, Austrália venceu nos pênaltis por 4x3.
+  - **Copa de 2006 completa (64/64 jogos).** Oitavas (Lado A): Holanda 2x1 Suécia, Espanha 1x0 Japão (PR), Austrália 1(4)x1(3) República Tcheca (pênaltis), Inglaterra 2(4)x2(5) Turquia (pênaltis) · (Lado B): Itália 1(4)x1(5) Nova Zelândia (pênaltis), Alemanha 1x0 França, Portugal 2x3 Uruguai, Brasil 1(4)x1(5) Argentina (pênaltis).
+    Quartas: Holanda 3x1 Espanha, Austrália 1x0 Turquia (PR) (Lado A) · Nova Zelândia 0x2 Alemanha (PR), Uruguai 2x0 Argentina (Lado B).
+    Semifinal: Holanda 2x1 Austrália · Alemanha 0x2 Uruguai.
+    Terceiro lugar: Austrália 1x2 Alemanha.
+    **Final: Holanda 1x0 Uruguai (prorrogação) — Holanda é campeã jogando em casa (1º título), terceiro anfitrião seguido a vencer (Espanha 2004, Portugal 2005, Holanda 2006).**
+    `edicoes.csv` atualizado: campeão Holanda, vice Uruguai, 3º Alemanha, 4º Austrália.
+    - **Pendência de precisão:** 3 jogos decididos na prorrogação (marcados "(PR)") só tiveram o placar final informado, sem o split tempo normal/prorrogação: Espanha 1x0 Japão (oitavas), Austrália 1x0 Turquia e Nova Zelândia 0x2 Alemanha (quartas), e a final Holanda 1x0 Uruguai.
+- `ranking_historico.csv` recalculado para `ano_referencia=2007`, acumulando 1990-2006 (1088 jogos). Topo: **Alemanha (250 pts)**, Itália (206), Inglaterra (201), Brasil (200), França (195), Uruguai (189), Holanda (188, subiu com o título), Espanha (183).
 
 ## Como adicionar dados
 
