@@ -283,7 +283,17 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
   - Grupos sorteados com `random.seed(2007)`, Coreia do Sul travada no Grupo A. Resultado em `data/grupos.csv`:
     A: Coreia do Sul/Japão/Estados Unidos/Costa Rica · B: Brasil/Suécia/Paraguai/Jordânia · C: Uruguai/México/Dinamarca/Qatar · D: Itália/Espanha/Argélia/Belize · E: Inglaterra/Argentina/Nigéria/Zimbábue · F: Holanda/Portugal/Gana/Uzbequistão · G: França/Nova Zelândia/África do Sul/Suazilândia · H: Alemanha/Austrália/Croácia/Sérvia.
   - 4 seleções novas adicionadas a `selecoes.csv`: Sérvia, Belize, Suazilândia, Uzbequistão.
-  - Jogos de 2007 ainda não disputados/registrados em `jogos.csv`.
+  - **Fase de grupos de 2007 completa** (48 jogos). Nenhum grupo precisou de confronto direto ou ranking histórico — todos resolvidos por pontos + saldo de gols.
+    Classificação: A: Coreia do Sul(7)/Japão(5) · B: Suécia(7)/Brasil(5) · C: Dinamarca(5)/Uruguai(4) · D: Espanha(9)/Itália(6) · E: Inglaterra(7)/Argentina(5) · F: Holanda(7)/Portugal(4) · G: Nova Zelândia(7)/França(6) · H: Austrália(7)/Alemanha(4).
+    - Zebras: **Suécia 1º sobre o Brasil no Grupo B** · **Dinamarca 1º sobre o Uruguai no Grupo C** · **Nova Zelândia 1º sobre a França no Grupo G** — três seleções do pote 1 (Brasil, Uruguai, França) superadas na própria chave.
+  - **Copa de 2007 completa (64/64 jogos).** Oitavas (Lado A): Coreia do Sul 1x0 Brasil, Dinamarca 0x2 Itália (PR), Inglaterra 1x2 Portugal, Nova Zelândia 2x1 Alemanha · (Lado B): Suécia 1(4)x1(5) Japão (pênaltis), Espanha 1x0 Uruguai, Holanda 2x1 Argentina, Austrália 1x0 França.
+    Quartas: Coreia do Sul 1(4)x1(3) Itália (pênaltis), Portugal 2(5)x2(4) Nova Zelândia (pênaltis) (Lado A) · Japão 2x4 Espanha (PR), Holanda 0x1 Austrália (Lado B).
+    Semifinal: Coreia do Sul 0x1 Portugal · Espanha 2x1 Austrália.
+    Terceiro lugar: Coreia do Sul 2x1 Austrália (PR).
+    **Final: Portugal 0x1 Espanha (prorrogação) — Espanha conquista o 2º título (após 2004), com o anfitrião Coreia do Sul ficando em 3º.**
+    `edicoes.csv` atualizado: campeão Espanha, vice Portugal, 3º Coreia do Sul, 4º Austrália.
+    - **Pendência de precisão:** 4 jogos decididos na prorrogação (marcados "(PR)") só tiveram o placar final informado, sem o split tempo normal/prorrogação: Dinamarca 0x2 Itália (oitavas), Japão 2x4 Espanha (quartas), Coreia do Sul 2x1 Austrália (3º lugar) e a final Portugal 0x1 Espanha.
+- `ranking_historico.csv` recalculado para `ano_referencia=2008`, acumulando 1990-2007 (1152 jogos). Topo: **Alemanha (254 pts)**, Itália (216), Inglaterra (208), Brasil (205), Espanha (204, subiu com o 2º título), França (201), Holanda (198), Uruguai (193).
 
 ## Como adicionar dados
 
