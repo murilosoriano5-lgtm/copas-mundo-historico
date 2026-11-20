@@ -294,6 +294,15 @@ Schema completo de cada coluna: ver `docs/ESTRUTURA_DE_DADOS.md`.
     `edicoes.csv` atualizado: campeão Espanha, vice Portugal, 3º Coreia do Sul, 4º Austrália.
     - **Pendência de precisão:** 4 jogos decididos na prorrogação (marcados "(PR)") só tiveram o placar final informado, sem o split tempo normal/prorrogação: Dinamarca 0x2 Itália (oitavas), Japão 2x4 Espanha (quartas), Coreia do Sul 2x1 Austrália (3º lugar) e a final Portugal 0x1 Espanha.
 - `ranking_historico.csv` recalculado para `ano_referencia=2008`, acumulando 1990-2007 (1152 jogos). Topo: **Alemanha (254 pts)**, Itália (216), Inglaterra (208), Brasil (205), Espanha (204, subiu com o 2º título), França (201), Holanda (198), Uruguai (193).
+- **Copa de 2008: potes e grupos definidos.** Sede Qatar (seleção nova, sem histórico), campeão anterior Espanha. Pote 1 completado pelas 6 maiores pontuações do ranking acumulado (1990-2007) entre as 30 seleções da lista.
+  - Pote 1: Qatar, Espanha, Alemanha (254), Itália (216), Inglaterra (208), Brasil (205), França (201), Holanda (198).
+  - Pote 2: Uruguai (193), Argentina (146), Austrália (146), Nova Zelândia (118), Portugal (114), México (112), Japão (54), Estados Unidos (46).
+  - Pote 3: Gana (40), Coreia do Sul (37), Nigéria (32), Polônia (28), Camarões (26), Rússia (20), Costa do Marfim (8), Irã (8).
+  - Pote 4: Barbados (0), Fiji (0), Israel (0), País de Gales (0), São Vicente e Granadinas (0), Somália (0), Togo (0), Venezuela (0) — todos empatados em 0 pontos, ordenados por critério alfabético normalizado.
+  - Grupos sorteados com `random.seed(2008)`, Qatar travado no Grupo A. Resultado em `data/grupos.csv`:
+    A: Qatar/México/Polônia/Barbados · B: Itália/Portugal/Irã/País de Gales · C: Holanda/Uruguai/Gana/Venezuela · D: França/Nova Zelândia/Nigéria/Fiji · E: Espanha/Estados Unidos/Coreia do Sul/Somália · F: Inglaterra/Argentina/Costa do Marfim/Togo · G: Brasil/Austrália/Camarões/São Vicente e Granadinas · H: Alemanha/Japão/Rússia/Israel.
+  - 5 seleções novas adicionadas a `selecoes.csv`: País de Gales, Israel, Venezuela, Barbados, São Vicente e Granadinas.
+  - Jogos de 2008 ainda não disputados/registrados em `jogos.csv`.
 
 ## Como adicionar dados
 
